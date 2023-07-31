@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Image Classification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <div class ="center-box">
+        <h1 style="color:rgb(255, 255, 255); text-align: center;">
+            ...Upload you X-ray Image...
+        </h1>
+        
+        <form method="POST" enctype="multipart/form-data" class="upload-form">
+            <label id="upload-label" for="file-upload">Upload</label>
+            <input id="file-upload" type="file" name="image" accept="image/*" required>
+            <center><button type="submit">Submit</button></center>
+        
+        </form>
+    </div>
+    <script>
+        document.getElementById('file-upload').addEventListener('change', function() {
+            document.getElementById('upload-label').textContent = '✔️';
+        });
+    </script>
+</body>
+</html>

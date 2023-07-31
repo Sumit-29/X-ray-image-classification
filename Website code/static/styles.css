@@ -1,0 +1,93 @@
+body {
+    background-image: url('background_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.center-box {
+    width: 25%; /* adjust as needed */
+    height: 40%; /* adjust as needed */
+    border-radius: 20px; /* adjust for more or less 'roundness' */
+    margin: 0 auto; /* centers the box */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* add a background gradient */
+    /* background: linear-gradient(to top left,  rgb(37, 29, 91),rgb(22, 86, 198), rgb(255, 255, 255)); */
+    /* add some padding for your content */
+    padding: 20px;
+    /* optionally add a border */
+    border: 10px solid rgb(255, 255, 255);
+    /* box-shadow: 50px 50px 25px 25px rgb(255, 255, 255); */
+    box-shadow: 
+        5px 5px   20px rgba(255, 255, 255, 0.8),
+        10px 10px   40px rgba(255, 255, 255, 0.8),
+        20px 20px   60px rgba(255, 255, 255, 0.6), 
+        40px 40px   80px rgba(255, 255, 255, 0.2),
+        60px 60px   100px rgba(255, 255, 255, 0.2),
+        80px 80px   120px rgba(255, 255, 255, 0.2),
+        100px 100px   220px rgba(255, 255, 255, 0.2);
+
+}
+
+.upload-form {
+    display: flex;
+    margin-top: 110px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the Submit button */
+button[type="submit"] {
+    background-color: #ffffff;  /* green background */
+    color: rgb(0, 0, 0);  /* white text */
+    padding: 15px 32px;  /* size of the button, adjust as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: fantasy;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;  /* rounded corners */
+}
+button {
+    background-color: #ffffff;  /* green background */
+    color: rgb(0, 0, 0);  /* white text */
+    padding: 15px 32px;  /* size of the button, adjust as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: fantasy;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;  /* rounded corners */
+}
+
+/* Basic styles for the Choose File button */
+input[type="file"] {
+    display: none;
+    
+}
+
+label {
+    padding: 10px;
+    background-color: #ffffff; /* green background */
+    color: rgb(0, 0, 0); /* white text */
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    font-family: fantasy;
+    margin: 10px 10px;
+    border-radius: 12px;
+}
+.spacer {
+    padding: 37px;
+    flex-grow: 10;
+}
+
+
